@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
+:root {
+  --color-numbers: #2adfb8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.content {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculadora {
+  background-color: rgb(25, 24, 27);
+  color: #9bc4d4;
+  border-radius: 20px;
+}
+
+.pantalla {
+  padding: 10px;
+  background-color: #1e2035;
+  min-height: 20vh;
+  border-radius: 20px;
+}
+
+.pantalla .top {
+  display: flex;
+  justify-content: flex-end;
+  color: var(--color-numbers);
+}
+
+/* BOTONES */
+.botones {
+  display: flex;
+  padding: 10px;
+}
+
+.numeros {
+  flex: 0.7;
+  margin-right: 10px;
+  display: grid;
+  grid-gap: 25px;
+  gap: 10px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.numero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  transition: 0.2s ease all;
+}
+.numero:hover {
+  cursor: pointer;
+  background-color: rgb(63, 59, 71);
+}
+
+.signos {
+  flex: 0.3;
+  display: grid;
+  grid-gap: 25px;
+  gap: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.signo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signo:hover {
+  cursor: pointer;
+  background-color: rgb(63, 59, 71);
+}
+
+.signo ion-icon {
+  padding: 14px;
+}
+
+.signos .signo:nth-child(4) {
+  color: #df2a2a;
+}
